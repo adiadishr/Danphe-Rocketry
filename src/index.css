@@ -18,11 +18,11 @@ body {
 
 /* Navbar */
 .navLink {
-  @apply uppercase tracking-tighter font-light text-[8px] items-center md:flex hidden hover:underline underline-offset-8 transform cursor-pointer transition-all duration-100 opacity-95 hover:opacity-100 hover:drop-shadow-lg
+  @apply uppercase tracking-tighter font-light text-[8px] items-center md:flex hidden transform cursor-pointer transition-all duration-200 opacity-85 hover:opacity-90 hover:drop-shadow-lg px-3 py-2 hover:bg-white hover:text-black rounded-full
 }
 
 .navLinkActive {
-  @apply underline
+  @apply bg-white text-black rounded-full opacity-95 hover:opacity-100
 }
 
 .navActive {
@@ -36,18 +36,36 @@ body {
 /* About */
 #about {
   background: url(./assets/wave.gif);
-  background-attachment: fixed !important;
 }
 
 #about {
   @apply bg-no-repeat bg-cover
 }
 
-/* Values */
-#values {
-  position: relative;
+/* Stats */
+
+.statsNum {
+  @apply text-[calc(2rem+3vw)] font-normal tracking-tight
 }
 
+.statsDesc {
+  @apply text-[calc(.75rem+1.75vw)] font-extralight tracking-tight
+}
+
+/* Rocket Demo */
+#demoList {
+  @apply gap-6
+}
+
+#demoList li {
+  @apply md:text-center px-3 py-2 border-red-600 border-2 rounded-3xl hover:bg-red-600 cursor-pointer hover:scale-105 transition-all duration-300 font-light tracking-tight
+}
+
+#demoList li span:nth-child(2) {
+  @apply pl-2
+}
+
+/* Values */
 #values::before {
   content: "";
   position: absolute;
@@ -60,31 +78,8 @@ body {
   z-index: -1;
 }
 
-.valuesActive {
-  @apply bg-white px-5 transition-all duration-300 ease-in
-}
-
-.valuesActive {
-  color: black !important;
-  padding: 0 1.25rem 0 1.25rem !important;
-}
-
-.valuesButton {
-  @apply flex text-[calc(1rem+1.5vw)] text-white px-5 md:px-0 transition-all duration-300 ease-in
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.animate-fade-in {
-  animation: fade-in 0.5s ease-in-out;
+.valuesContent {
+  @apply border bg-transparent text-white rounded-xl p-4 divide-y font-extralight tracking-tight transition-all duration-200 cursor-pointer hover:bg-white/95 flex flex-col hover:text-black hover:divide-black hover:shadow-2xl
 }
 
 /* Join */
@@ -103,4 +98,40 @@ textarea {
 #inputNumber {
   -moz-appearance: textfield;
   /* Firefox */
+}
+
+/* Research Hero */
+
+#researchHero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./assets/rndbg.png) center/cover;
+  filter: brightness(50%) blur(2px);
+  z-index: -1;
+}
+
+/* Research Gallery */
+
+/* .rndGalleryImage {
+  @apply
+} */
+
+#rndGalleryImageOne{
+  background: url(./assets/test.jpeg) center/cover;
+}
+
+#rndGalleryImageTwo {
+  background: url(./assets/oxygen.jpeg) center/cover;
+}
+
+#rndGalleryImageThree {
+  background: url(./assets/transmitter.png) center/cover;
+}
+
+#rndGalleryImageFour {
+  background: url(./assets/research.jpeg) center/cover;
 }

@@ -1,17 +1,14 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import Join from './components/Join';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import Launch from './pages/Launch';
+import Rnd from './pages/Rnd';
+import Explore from './pages/Explore';
 AOS.init();
 
 const App = () => {
   return (
-    <>
-    <Navbar />
-    <Hero />
-    <About />
-    <Join />
+    <>  
+      <Explore />
     </>
   )
 }
