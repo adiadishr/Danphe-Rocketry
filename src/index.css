@@ -18,7 +18,7 @@ body {
 
 /* Navbar */
 .navLink {
-  @apply uppercase tracking-tighter font-light text-[8px] items-center md:flex hidden transform cursor-pointer transition-all duration-200 opacity-85 hover:opacity-90 hover:drop-shadow-lg px-3 py-2 hover:bg-white hover:text-black rounded-full
+  @apply tracking-tight font-normal text-[8px] items-center md:flex hidden transform cursor-pointer transition-all duration-200 opacity-85 hover:opacity-90 hover:drop-shadow-lg px-3 py-2 hover:bg-white hover:text-black rounded-full
 }
 
 .navLinkActive {
@@ -120,7 +120,7 @@ textarea {
   @apply
 } */
 
-#rndGalleryImageOne{
+#rndGalleryImageOne {
   background: url(./assets/test.jpeg) center/cover;
 }
 
@@ -134,4 +134,36 @@ textarea {
 
 #rndGalleryImageFour {
   background: url(./assets/research.jpeg) center/cover;
+}
+
+/* Team */
+
+#teamHero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./assets/teamBg.png) center/cover;
+  filter: brightness(35%) blur(1px);
+  z-index: -1;
+  border-bottom-left-radius: 150px 150px;
+  border-bottom-right-radius: 150px 150px;
+}
+
+/* Explore */
+
+#exploreHero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./assets/exploreBg.png) center/cover;
+  filter: brightness(50%) blur(2px);
+  z-index: -1;
+  border-bottom-left-radius: 150px 150px;
+  border-bottom-right-radius: 150px 150px;
 }

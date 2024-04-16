@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.svg'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { BiPhoneCall } from 'react-icons/bi';
 
@@ -41,7 +41,8 @@ const Navbar = ({ title }) => {
                         <ul className='list-none flex flex-row gap-7 '>
                             <li className={title == '1' ? 'navLink navLinkActive' : 'navLink'}><a href='#launch'>Launch</a></li>
                             <li className={title === '2' ? 'navLink navLinkActive' : 'navLink'}><a href='#rnd'>Research and Development</a></li>
-                            <li className={title === '3' ? 'navLink navLinkActive' : 'navLink'}>Explore</li>
+                            <li className={title === '3' ? 'navLink navLinkActive' : 'navLink'}>Team</li>
+                            <li className={title === '4' ? 'navLink navLinkActive' : 'navLink'}>Explore</li>
                             <li className='navLink border'><a className='flex flex-row items-center justify-center gap-2' href='#join'>Reach <BiPhoneCall className='flex w-4 h-auto items-center justify-center' /></a></li>
                             <li className='flex justify-center items-center md:hidden'><AiOutlineMenu /></li>
                         </ul>
