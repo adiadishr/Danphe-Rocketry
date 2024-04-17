@@ -40,10 +40,10 @@ const Navbar = ({ title }) => {
                     </div>
                     <div className="flex">
                         <ul className='list-none flex flex-row gap-7 '>
-                            <li className={title == '1' ? 'navLink navLinkActive' : 'navLink'}> <NavLink to="/"><a className='flex flex-row items-center justify-center gap-2'>Launch</a></NavLink></li>
-                            <li className={title === '2' ? 'navLink navLinkActive' : 'navLink'}><NavLink to="/Research&Development">Research and Development </NavLink></li>
-                            <li className={title === '3' ? 'navLink navLinkActive' : 'navLink'}><NavLink to="/Team">Team</NavLink></li>
-                            <li className={title === '4' ? 'navLink navLinkActive' : 'navLink'}><NavLink to="/Explore/#explore">Explore</NavLink></li>
+                            <NavLink className={title == '1' ? 'navLink navLinkActive' : 'navLink'} to="/">Launch</NavLink>
+                            <NavLink className={title == '2' ? 'navLink navLinkActive' : 'navLink'} to="/Research&Development">Research and Development</NavLink>
+                            <NavLink className={title == '3' ? 'navLink navLinkActive' : 'navLink'} to="/Team">Team</NavLink>
+                            <NavLink className={title == '4' ? 'navLink navLinkActive' : 'navLink'} to="/Explore">Explore</NavLink>
                             <li className='navLink border'><a className='flex flex-row items-center justify-center gap-2' href='#join'>Reach <BiPhoneCall className='flex w-4 h-auto items-center justify-center' /></a></li>
                             <li className='flex justify-center items-center md:hidden'><AiOutlineMenu /></li>
                         </ul>

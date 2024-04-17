@@ -6,11 +6,13 @@ import Explore from './pages/Explore';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 AOS.init();
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <>
         <Routes>
           <Route path='/' exact element={<Launch />} />
