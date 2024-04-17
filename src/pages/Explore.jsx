@@ -6,9 +6,10 @@ import Join from '../components/Join'
 const Explore = () => {
   return (
     <div>
-        <Navbar title='4' />
-        <ExploreHero />
-        <Join />
+      <div id="explore"></div>
+      <Navbar title='4' />
+      <ExploreHero />
+      <Join />
     </div>
   )
 }

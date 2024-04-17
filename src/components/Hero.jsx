@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 const Hero = () => {
     return (
         <>
-            <div className="h-screen relative flex flex-col">
+            <div data-aos='zoom' data-aos-duration='700' className="h-screen relative flex flex-col">
                 <video
                     autoPlay
                     loop
