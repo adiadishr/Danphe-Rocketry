@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../assets/logo.svg'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai'
 import { BiPhoneCall } from 'react-icons/bi';
 import { Link, NavLink } from 'react-router-dom'
