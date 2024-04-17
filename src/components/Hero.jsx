@@ -5,12 +5,12 @@ import { TypeAnimation } from 'react-type-animation';
 const Hero = () => {
     return (
         <>
-            <div data-aos='zoom' data-aos-duration='700' className="h-screen relative flex flex-col">
+            <div data-aos='fade' data-aos-duration='700' className="h-screen relative flex flex-col">
                 <video
                     autoPlay
                     loop
                     muted
-                    className="absolute right-0 top-0 h-full w-full object-cover z-[-1] "
+                    className="absolute right-0 top-0 h-full w-full object-cover z-[-1] blur-sm "
                 >
                     <source src={BgVideo} type="video/mp4" />
                 </video>

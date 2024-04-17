@@ -6,7 +6,7 @@ import { AiOutlineTeam } from "react-icons/ai";
 const Join = () => {
 
     return (
-        <div id='join' data-aos='fade' data-aos-duration="1500" data-aos-once="true" className='h-max flex px-[5%] flex-col overflow-hidden border-b-4 border-double pb-10'>
+        <div id='join' data-aos='zoom' data-aos-duration="3000" data-aos-once="true" className='h-max flex px-[5%] flex-col overflow-hidden border-b-4 border-double pb-10'>
             <div className='flex w-full justify-center text-white rounded-xl py-10 mb-10 md:mb-0 mt-[60px]'>
                 <h1 data-aos='fade-up' data-aos-duration="700" className="text-[calc(1.75rem+2vw)] font-extralight tracking-tight text-white uppercase">
                     Collaborate <AiOutlineTeam className='inline-flex mb-3 ml-2 font-extralight' />
